@@ -1,0 +1,309 @@
+﻿<style>
+    .header {
+        background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('../../Images/Background/BG.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: 100%;
+        margin-top: -65px;
+        position: relative;
+        top: 0;
+    }
+
+    .header h1 {
+        color: white;
+        margin-top: 250px;
+    }
+    .social-links a {
+        font-size: 18px;
+        display: inline-block;
+        background: #292929;
+        color: #fff;
+        line-height: 1;
+        padding: 8px 0;
+        margin-right: 4px;
+        border-radius: 4px;
+        text-align: center;
+        width: 36px;
+        height: 36px;
+        transition: 0.3s;
+    }
+
+        .social-links a:hover {
+            background: #28a745;
+            color: #151515;
+            text-decoration: none;
+        }
+
+    .social-links a {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        line-height: 1;
+        margin-right: 8px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-links {
+        margin-top: 40px;
+        display: flex;
+    }
+
+    .social-links a:hover {
+        background: #18d26e;
+    }
+
+    .social-links {
+        margin-top: 15px;
+    }
+
+    button {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .about {
+        /*height: 100vh;*/
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .contact {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .resume {
+        background-size: cover;
+        background-position: center;
+    }
+
+    body {
+        background-image: url('../../Images/Background/BG.jpg') !important;
+    }
+</style>
+
+<link href="~/Custom/Styles/Style.css" rel="stylesheet" />
+<section class="Home header" id="Home">
+    <div class="container">
+        <section id="welcome-text" class="col-md-8 col-sm-12">
+            <div class="row d-flex justify-content-center">
+                <h1 style="font-size:7vw;"><strong>I'M SHARATH<span class="text-success">.</span></strong></h1>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <h3 style="font-size:2vw;">I'm a <span class="text-success">Developer</span></h3>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <button class="btn btn-sm btn-outline-success"><i class="fa fa-download"></i> Download Resume</button>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="social-links">
+                    <a href="http://www.twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="http://www.facebook.com/iamkutte10" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="http://www.instagram.com/kutte_10" class="instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
+
+        <div class="section-title">
+            <h2>About</h2>
+            <p>Know more about me</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-sm-12" data-aos="fade-right">
+                <img src="~/Images/Logo/logo1 copy.png" class="img-fluid" alt=""/>
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content col-sm-12" data-aos="fade-left">
+                <h3>Developer &amp; Editor</h3>
+                <p class="fst-italic">
+                        My name is Sharath from Kerala, India. I have completed my masters in Computer Application from VTU university. Currently i am working in talentpace private ltd. Bangalore
+                </p>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <ul>
+                            <li><i class="fa fa-chevron-right"></i> <strong>Birthday:</strong> <span>25 April</span></li>
+                            <li><i class="fa fa-chevron-right"></i> <strong>Degree:</strong> <span>Masters in Computer Application</span></li>
+
+                            <li><i class="fa fa-chevron-right"></i> <strong>Phone:</strong> <span>+91 9446641873</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <ul>
+                            <li><i class="fa fa-chevron-right"></i> <strong>City:</strong> <span>Kasaragod, Kerala</span></li>
+                            <li><i class="fa fa-chevron-right"></i> <strong>Email:</strong> <span>sharathbdk@gmail.com</span></li>
+                            <li><i class="fa fa-chevron-right"></i> <strong>Website:</strong> <a href="http://www.sharathonline.com">www.sharathonline.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                @*<p class="fst-italic">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                    </p>*@
+            </div>
+        </div>
+
+    </div><!-- End About Me -->
+</section>
+
+<!-- ======= Resume Section ======= -->
+<section id="resume" class="resume">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Resume</h2>
+            <p>Check My Resume</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="resume-title">Summary</h3>
+                <div class="resume-item pb-0">
+                    <h4>Sharath</h4>
+                    <p><em>Creative and Innovative software engineer with 1+ years of experience for designing and developing user requirements on time.</em></p>
+                    <p>
+                        <ul>
+                            <li>Kasaragod, Kerala</li>
+                            <li>+91 9446641873</li>
+                            <li>sharathbdk@gmail.com</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <h3 class="resume-title">Education</h3>
+                <div class="resume-item">
+                    <h4>Master of Computer Application</h4>
+                    <h5>2017 - 2019</h5>
+                    <p><em>Shree Devi Institute of Technology, Mangalore</em></p>
+                    <p>
+                       Completed with an aggregate of 76.6% from Shree Devi Institute of Technology under Visvesvaraya Technological University.
+                </div>
+                <div class="resume-item">
+                    <h4>Bachlor of Computer Application</h4>
+                    <h5>2012 - 2015</h5>
+                    <p><em>Shree Devi Institute of Information Science, Mangalore</em></p>
+                    <p>
+                        Completed wiith an aggregate of 58.3% from Shree Devi Institute of Technology under Mangalore University.
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h3 class="resume-title">Professional Experience</h3>
+                <div class="resume-item">
+                    <h4>Software Engineer</h4>
+                    <h5>2019 - Present</h5>
+                    <p><em>Bangalore, India</em></p>
+                    <p>
+                        <ul>
+                            <li>Designed and developed web pages using MVC Architecture.</li>
+                            <li>Created SQL Database such as Tables, Stored Procedure and Functions.</li>
+                            <li>Implemented the validations using jQuery and MVC.</li>
+                            <li>Unit testing the functionality.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="resume-item">
+                    <h4>Video Editing</h4>
+                    <h5>2017-2019</h5>
+                    <p><em></em></p>
+                    <p>
+                        @*<ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>*@
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section><!-- End Resume Section -->
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Contact</h2>
+            <p>Contact Me</p>
+        </div>
+
+        <div class="row mt-2">
+
+            <div class="col-md-6 d-flex align-items-stretch">
+                <div class="info-box">
+                    <i class="fa fa-map"></i>
+                    <h3>My Address</h3>
+                    <p>Bandadka. Kasaragod 671541</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+                <div class="info-box">
+                    <i class="fa fa-share-alt"></i>
+                    <h3>Social Profiles</h3>
+                    <div class="social-links">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="#" class="google-plus"><i class="fa fa-skype"></i></a>
+                        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mt-4 d-flex align-items-stretch">
+                <div class="info-box">
+                    <i class="fa fa-envelope"></i>
+                    <h3>Email Me</h3>
+                    <p>sharathbdk@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-md-6 mt-4 d-flex align-items-stretch">
+                <div class="info-box">
+                    <i class="fa fa-phone"></i>
+                    <h3>Call Me</h3>
+                    <p>+91 9446641873</p>
+                </div>
+            </div>
+        </div>
+
+        <form action="#!" method="post" role="form" class="php-email-form mt-4">
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+            </div>
+            <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+
+    </div>
+</section><!-- End Contact Section -->
+<script src="~/Custom/Scripts/typed.min.js"></script>

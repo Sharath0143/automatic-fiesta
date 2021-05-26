@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sharath</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <style>
+        .nav-item {
+            padding-left: 25px;
+            padding-right: 25px;
+            letter-spacing: 0.8px;
+            font-family: "Quicksand-VariableFont_wght" !important;
+        }
+        .navbar {
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+        }
+        /* The side navigation menu */
+        .sidenav {
+            height: 100%; /* 100% Full-height */
+            width: 0; /* 0 width - change this with JavaScript */
+            position: fixed; /* Stay in place */
+            z-index: 2; /* Stay on top */
+            top: 0; /* Stay at the top */
+            left: 0;
+            /*background-color: rgba(0,0,0,0.8);*/ /* Black*/
+            background-color: black; /* Black*/
+            overflow-x: hidden; /* Disable horizontal scroll */
+            padding-top: 60px; /* Place content 60px from the top */
+            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+        }
+
+        /* The navigation menu links */
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            color: green;
+        }
+
+        /* Position and style the close button (top right corner) */
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @@media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        .nav-link {
+            color: white !important;
+            font-weight:bold !important;
+        }
+        .solid {
+            background-color: black;
+            transition: background-color 1s ease 0s;
+            padding-bottom:15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <div class="container">
+            <a href="javascript:void(0)" class="closebtn closeWindow" onclick="closeNav()">&times;</a>
+            <a href="#Home" class="closeWindow">Home</a>
+            <a href="#about" class="closeWindow">About</a>
+            <a href="#resume" class="closeWindow">Resume</a>
+            <a href="#contact" class="closeWindow">Contact</a>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#Home">
+                <img src="~/Images/Logo/logo1 copy.png" alt="" width="50" height="50" />
+            </a>
+            <button class="navbar-toggler" type="button" data-target="#mySidenav" onclick="openNav()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+        //function closeNav() {
+        //    document.getElementById("mySidenav").style.width = "0";
+        //}
+    </script>
+
+    <script src="~/Scripts/jquery-3.6.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Transition effect for navbar
+            $(window).scroll(function () {
+                // checks if window is scrolled more than 500px, adds/removes solid class
+                if ($(this).scrollTop() > 150) {
+                    $('.navbar').addClass('solid');
+                } else {
+                    $('.navbar').removeClass('solid');
+                }
+            });
+        });
+        $('.closeWindow').on('click',function () {
+            document.getElementById("mySidenav").style.width = "0";
+        });
+    </script>
+</body>
+</html>

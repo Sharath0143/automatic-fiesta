@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1259
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{DB4659A9-C562-4315-9E38-38EB09B0C7A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{6B45420D-22BF-4883-9356-8BBD71E05527}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7FCEEAA5-DC2F-4825-BD9B-DE9670CB0812}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iPortfolio.Web", "iPortfolio.Web\iPortfolio.Web.csproj", "{872D4756-E835-4AD6-8825-AD0E3FA2A427}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{872D4756-E835-4AD6-8825-AD0E3FA2A427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{872D4756-E835-4AD6-8825-AD0E3FA2A427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{872D4756-E835-4AD6-8825-AD0E3FA2A427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{872D4756-E835-4AD6-8825-AD0E3FA2A427}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{872D4756-E835-4AD6-8825-AD0E3FA2A427} = {6B45420D-22BF-4883-9356-8BBD71E05527}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A6AE1C2-64B9-4519-BBCC-FB89C6FD59A8}
+	EndGlobalSection
+EndGlobal
